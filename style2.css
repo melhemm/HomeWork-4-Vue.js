@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    overflow: hidden;
+    background: #4634547a;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin: auto;
+}
+
+button {
+    background: #458f8b;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #02fcef;
+}
+
+img {
+    max-width: 250px;
+    width: 100%;
+    padding: 1rem;
+}
+
+#grid {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+#grid img {
+    height: 200px;
+}
+
+.list {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.list div {
+    border: 1px solid black;
+    height: auto;
+}
+
+.list h3 {
+    padding: 1rem;
+}
+

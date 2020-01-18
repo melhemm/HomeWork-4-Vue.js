@@ -28,7 +28,7 @@
             <div>
                 <div v-if="layout == 'grid'" class="grid" id="grid">
                     <div v-for="post in posts">
-                        <img v-bind:src="post.image" />
+                        <a v-bind:href="post.url"> <img v-bind:src="post.image" /> </a>
                         <!-- <h3>{{post.title}}</h3>
                         <h3>{{post.author}}</h3> -->
                     </div>
@@ -43,6 +43,9 @@
                         <img v-bind:src="post.image" />
                         <h3>{{post.title}}</h3>
                         <h3>{{post.author}}</h3>
+                        <div id="src">
+                            <a v-bind:href="post.url"> Source </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -57,32 +60,38 @@
                 posts: [{
                         image: 'https://1gew6o3qn6vx9kp3s42ge0y1-wpengine.netdna-ssl.com/wp-content/uploads/prod/2019/11/dynamics-image.jpg',
                         title: 'Tallying the momentous growth and continued expansion of Dynamics 365 and the Power Platform',
-                        author: 'Judson Althoff'
+                        author: 'Judson Althoff',
+                        url: 'https://blogs.microsoft.com/blog/2020/01/09/innovating-to-drive-the-future-of-intelligent-retail/'
                     },
                     {
                         image: 'https://1gew6o3qn6vx9kp3s42ge0y1-wpengine.netdna-ssl.com/wp-content/uploads/prod/2019/12/Lucas-Still-03-2_for-12-5.jpg',
                         title: 'Imagining the future from an alternative perspective',
-                        author: 'Mitra Azizirad'
+                        author: 'Mitra Azizirad',
+                        url: 'https://blogs.microsoft.com/blog/2019/12/05/imagining-the-future-from-an-alternative-perspective/'
                     },
                     {
                         image: 'https://1gew6o3qn6vx9kp3s42ge0y1-wpengine.netdna-ssl.com/wp-content/uploads/prod/2019/12/2-Cropped-3-people-Happy-Hour-3-1024x598.jpg',
                         title: 'The next decade for financial services – benefitting from tech intensity',
-                        author: 'Bill Borden'
+                        author: 'Bill Borden',
+                        url: 'https://blogs.microsoft.com/blog/2019/12/18/the-next-decade-for-financial-services-benefitting-from-tech-intensity/'
                     },
                     {
                         image: 'https://1gew6o3qn6vx9kp3s42ge0y1-wpengine.netdna-ssl.com/wp-content/uploads/prod/2019/09/Connected-Store-hero.jpg',
                         title: 'Announcing new Microsoft Dynamics 365 AI-driven insights applications and our vision for the future of retail',
-                        author: 'Shelley Bransten'
+                        author: 'Shelley Bransten',
+                        url: 'https://blogs.microsoft.com/blog/2019/11/12/tallying-the-momentous-growth-and-continued-expansion-of-dynamics-365-and-the-power-platform/'
                     },
                     {
                         image: 'https://1gew6o3qn6vx9kp3s42ge0y1-wpengine.netdna-ssl.com/wp-content/uploads/prod/2020/01/Blog-KnowYourCustomers-ImgOnly-1.jpg',
                         title: 'Innovating to drive the future of intelligent retail',
-                        author: 'Shelley Bransten'
+                        author: 'Shelley Bransten',
+                        url: 'https://blogs.microsoft.com/blog/2019/11/12/the-microsoft-diversity-and-inclusion-report-reveals-momentum-and-learnings-for-the-future/'
                     },
                     {
                         image: 'https://1gew6o3qn6vx9kp3s42ge0y1-wpengine.netdna-ssl.com/wp-content/uploads/prod/2019/09/SibosOMBblog_Hero-2019.jpg',
                         title: 'Empowering financial services to achieve more',
-                        author: 'Shelley Bransten'
+                        author: 'Shelley Bransten',
+                        url: 'https://blogs.microsoft.com/blog/2019/02/14/black-history-month-a-time-to-lift-each-other-up/'
                     },
                 ]
             }
